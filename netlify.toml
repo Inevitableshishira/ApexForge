@@ -1,0 +1,11 @@
+
+[build]
+  publish = "."
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Note: Remember to set your API_KEY in the Netlify UI:
+# Site Settings > Build & deploy > Environment variables
