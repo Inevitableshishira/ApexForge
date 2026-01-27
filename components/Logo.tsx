@@ -12,16 +12,16 @@ const Logo: React.FC<LogoProps> = ({ className = "h-auto", color = "#000000", sh
     <div className={`flex flex-col items-center justify-center select-none ${className}`} style={{ color }}>
       <div className="flex flex-col items-center leading-none">
         {/* Main Brand Name */}
-        <span className="text-2xl md:text-3xl font-medium tracking-tight">
+        <span className="text-2xl md:text-4xl font-normal tracking-tight">
           ApexForge
         </span>
         
-        {/* Sub-brand / Descriptor */}
+        {/* Sub-brand / Descriptor - Updated to Studio */}
         <span 
-          className="text-[9px] md:text-[10px] font-light uppercase tracking-[0.6em] mt-1.5 opacity-80"
-          style={{ marginRight: '-0.6em' }} // Correct centering for tracking
+          className="text-[11px] md:text-[16px] font-normal tracking-[0.4em] mt-2 opacity-100"
+          style={{ marginRight: '-0.4em' }} // Correct centering for tracking
         >
-          Designs
+          Studio
         </span>
       </div>
     </div>
