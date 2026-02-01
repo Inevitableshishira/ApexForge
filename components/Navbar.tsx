@@ -37,15 +37,17 @@ const Navbar: React.FC = () => {
   ];
 
   return (
-    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-500 ${
-      isScrolled ? 'bg-white py-4 border-b border-black' : 'bg-transparent py-8'
+    <nav className={`fixed top-0 left-0 w-full z-50 transition-all duration-700 ${
+      isScrolled 
+        ? 'bg-white/70 backdrop-blur-xl py-4 border-b border-black/5 shadow-sm' 
+        : 'bg-transparent py-8'
     }`}>
       <div className="max-w-7xl mx-auto px-8 flex justify-between items-center">
         <button 
           onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
           className="hover:opacity-70 transition-opacity"
         >
-          <Logo color="black" className="h-auto" />
+          <Logo color="black" className="h-auto scale-90 md:scale-100 transition-transform duration-500" />
         </button>
         
         <div className="hidden md:flex space-x-12">
@@ -56,6 +58,7 @@ const Navbar: React.FC = () => {
               className="text-[10px] uppercase tracking-[0.4em] font-medium text-black/50 hover:text-black transition-all relative py-2"
             >
               {item.label}
+              <span className="absolute bottom-1 left-0 w-0 h-[1px] bg-black transition-all duration-300 group-hover:w-full opacity-0"></span>
             </button>
           ))}
         </div>
