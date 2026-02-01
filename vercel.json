@@ -1,6 +1,19 @@
 
 {
+  "cleanUrls": true,
   "rewrites": [
+    {
+      "source": "/google15f36a4accb20436.html",
+      "destination": "/google15f36a4accb20436.html"
+    },
+    {
+      "source": "/sitemap.xml",
+      "destination": "/sitemap.xml"
+    },
+    {
+      "source": "/robots.txt",
+      "destination": "/robots.txt"
+    },
     {
       "source": "/(.*)",
       "destination": "/index.html"
